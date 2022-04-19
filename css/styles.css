@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+#gameBoard{
+
+    display: grid;
+    background: #cccc;
+    gap: 10px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+
+.board_tiles {
+    background: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: cursive;
+    color: #222222;
+}
+
+.board_tiles_winner{
+    color: green;
+}
+
+.board_tiles > * {
+    border: 2px solid rgb(214,232,182);
+}
